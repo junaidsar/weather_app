@@ -1,6 +1,6 @@
 <ion-card class="today-card">
-  <p class="temperature">
-    {{temperature}}
+  <p class="temperature">{{temperatureSign}}
+    {{temperature| number: '1.0-0'}}
     <span class="degree">0</span>
     <span class="centigrade">{{temperatureUnit}}</span></p>
   <p class="day">{{day}}</p>

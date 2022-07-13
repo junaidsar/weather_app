@@ -9,6 +9,7 @@ export class DaysComponent implements OnInit {
   @Input() temperature;
   @Input() temperatureUnit;
   @Input() day;
+  @Input () temperatureSign;
 
   constructor() { }
 

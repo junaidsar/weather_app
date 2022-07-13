@@ -11,8 +11,6 @@ export class WeatherDataComponent implements OnInit {
   @Input() imagePath;
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.percentageNumber, this.addedText);
-  }
+  ngOnInit() { }
 
 }

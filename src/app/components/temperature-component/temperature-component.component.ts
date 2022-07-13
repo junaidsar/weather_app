@@ -11,6 +11,7 @@ export class TemperatureComponentComponent implements OnInit {
   @Input() weatherImageC;
   @Input() cityNameC;
   @Input() countryNameC;
+  @Input() todaySignC;
   constructor() { }
 
   ngOnInit() {}

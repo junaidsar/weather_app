@@ -6,8 +6,7 @@
   <ion-row>
     <ion-col *ngIf="temperatureC" size="7" class="temp-col">
       <ion-item lines="none">
-        <ion-label class="temperature-label">
-          +{{temperatureC | number: '1.0-0'}}
+        <ion-label class="temperature-label">{{todaySignC}}{{temperatureC | number: '1.0-0'}}
           <span class="degree-span">0</span>
           <span class="centigrade-span">C</span>
         </ion-label>
