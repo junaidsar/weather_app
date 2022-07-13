@@ -1,0 +1,34 @@
+ion-toolbar{
+  --background: #575a7f;
+  color: white;
+  ion-icon {
+    position: relative;
+    left: 12px;
+    font-size: 20px;
+    top: 11px;
+  }
+  ion-title {
+    font-size: 24px;
+    --padding-top: 20px;
+    font-weight: bold;
+  }
+}
+ion-content {
+  --background: #575a7f;
+  ion-searchbar{
+    --background: #1A1C49;
+    --icon-color: #57517f;
+    --placeholder-color: #575a7f;
+    --placeholder-opacity: 1;
+    --placeholder-font-weight: bold;
+    --border-radius: 15px;
+    --color: white;
+  }
+}
+.temp-col{
+  top: 25px;
+}
+.clouds-image{
+  width: 90%;
+}
+

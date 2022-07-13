@@ -1,0 +1,64 @@
+ion-card{
+  --background: #1A1C49;
+  border-radius: 15px;
+  ion-item {
+    --background: transparent;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    .today-label{
+      font-weight: bold;
+    }
+    .date{
+      font-weight: 100;
+    }
+    .temperature-label{
+      font-size: 70px;
+      .degree-span {
+        font-size: 18px;
+        position: absolute;
+        top: 24px;
+        left: 125px;
+        color: #FED55B;
+      }
+      .centigrade-span {
+        font-size: 24px;
+        color: #FED55B;
+        position: relative;
+        bottom: 30px;
+      }
+    }
+  }
+}
+.humidity-card,.pressure-card {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 5px;
+}
+.humidity-text {
+  padding: 5px;
+  .percentage{
+    margin: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  .humidity{
+    margin: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+.humidity-image {
+  margin-left: 4px;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+.pressure-image {
+  margin-left: 4px;
+  margin-top: 6px;
+  margin-right: 12px;
+}

@@ -1,0 +1,59 @@
+.today-card {
+  margin: 5px;
+  .temperature {
+    margin: 0px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+    .degree {
+      font-size: 13px;
+      position: relative;
+      bottom: 3px;
+      margin-right: 2px;
+    }
+    .centigrade {
+      font-size: 20px;
+    }
+  }
+  .day {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+ion-card{
+  --background: #1A1C49;
+  border-radius: 15px;
+  ion-item {
+    --background: transparent;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    .today-label{
+      font-weight: bold;
+    }
+    .date{
+      font-weight: 100;
+    }
+    .temperature-label{
+      font-size: 70px;
+      .degree-span {
+        font-size: 18px;
+        position: absolute;
+        top: 24px;
+        left: 125px;
+        color: #FED55B;
+      }
+      .centigrade-span {
+        font-size: 24px;
+        color: #FED55B;
+        position: relative;
+        bottom: 30px;
+      }
+    }
+  }
+}

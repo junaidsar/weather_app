@@ -1,0 +1,38 @@
+<ion-card class="main-card">
+  <ion-item lines="none">
+    <ion-label slot="start" class="today-label">Today</ion-label>
+    <ion-text slot="end" class="date">{{gettingDateC}}</ion-text>
+  </ion-item>
+  <ion-row>
+    <ion-col *ngIf="temperatureC" size="7" class="temp-col">
+      <ion-item lines="none">
+        <ion-label class="temperature-label">
+          +{{temperatureC | number: '1.0-0'}}
+          <span class="degree-span">0</span>
+          <span class="centigrade-span">C</span>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="5">
+      <img src="assets/images/few-clouds.png" class="clouds-image" *ngIf="weatherImageC >= 7 && weatherImageC <=12">
+      <img src="assets/images/clear-sky.png" class="clouds-image" *ngIf="weatherImageC <= 6 && weatherImageC >= 1">
+      <img src="assets/images/rain.png" class="clouds-image" *ngIf="weatherImageC >=13 && weatherImageC <= 14">
+      <img src="assets/images/thunderstorm.png" class="clouds-image" *ngIf="weatherImageC >=15 && weatherImageC <= 20">
+      <img src="assets/images/broken-clouds.png" class="clouds-image" *ngIf="weatherImageC >=21 && weatherImageC <= 29">
+      <img src="assets/images/clear-sky.png" class="clouds-image" *ngIf="weatherImageC === 30">
+      <img src="assets/images/snow.png" class="clouds-image" *ngIf="weatherImageC === 31">
+      <img src="assets/images/wind.png" class="clouds-image" *ngIf="weatherImageC === 32">
+      <img src="assets/images/scattered-clouds.png" class="clouds-image" *ngIf="weatherImageC >=33 && weatherImageC <= 38">
+      <img src="assets/images/mist.png" class="clouds-image" *ngIf="weatherImageC >=39 && weatherImageC <= 44">
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="4" class="location-icon">
+      <ion-icon name="location-sharp"></ion-icon>
+    </ion-col>
+    <ion-col size="8" class="location-name">
+      <p>{{cityNameC}}, {{countryNameC}}</p>
+    </ion-col>
+  </ion-row>
+</ion-card>

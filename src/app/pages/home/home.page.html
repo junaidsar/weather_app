@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar mode="ios">
+    <ion-icon name="grid"></ion-icon>
+    <ion-title>
+      Weather Forcast
+    </ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Search You City" mode="ios" (ionChange)="gettingValue($event)"></ion-searchbar>
+  <app-temperature-component gettingDateC="{{gettingDate}}" temperatureC="{{temperature}}" weatherImageC="{{weatherImage}}" cityNameC="{{cityName}}" countryNameC="{{countryName}}"></app-temperature-component>
+  <ion-row class="humidity-pressure-row">
+    <ion-col size="6">
+      <app-weather-data percentageNumber="92%" addedText="Humidity" imagePath="assets/images/humidity.png"></app-weather-data>
+    </ion-col>
+    <ion-col size="6">
+      <app-weather-data percentageNumber="1010HPA" addedText="Pressure" imagePath="assets/images/pressure.png"></app-weather-data>
+    </ion-col>
+  </ion-row>
+  <ion-row class="three-days-temperature">
+    <ion-col size="4">
+      <app-days temperature="+30" temperatureUnit="C" day="Friday"></app-days>
+    </ion-col>
+    <ion-col size="4">
+      <app-days temperature="+33" temperatureUnit="C" day="Saturday"></app-days>
+    </ion-col>
+    <ion-col size="4">
+      <app-days temperature="28" temperatureUnit="C" day="Sunday"></app-days>
+    </ion-col>
+  </ion-row>
+</ion-content>
